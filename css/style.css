@@ -1,0 +1,209 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+}
+.topNav {
+	position:fixed;
+	height: 15vh;
+	width: 100%;
+}
+.topNav > img {
+	left:5vw;
+	position: absolute;
+	box-sizing: border-box;
+	height: 100%;
+	vertical-align: middle;
+	padding: 5px;
+	z-index: 50000;
+	-webkit-filter: drop-shadow(0px 2px 5px rgba(0,0,0,7));
+}
+.topNavBar a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 3.25vh 16px;
+  text-decoration: none;
+  font-size: 3.5vh;
+  height: 100%;
+  
+}
+.topNavBar {
+	height: 10vh;
+ 	width: 100%;
+ 	background: rgba(41,90,169,0.7);
+ 	position:fixed;
+	top:2.5vh;
+	z-index: 20000;
+	box-shadow: 0px 0px 5px black;
+	
+}
+.topNav .icon {
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  .topNavBar a {display: none;}
+  .topNav a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 700px) {
+  .topNav.responsive {position: relative;}
+  .topNav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topNav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.mobileMenu {
+	position: fixed;
+	width: 100%;
+	
+	background: rgba(41,90,169,0.8);
+	z-index: 1;
+	top:12.5vh;
+	color:white;
+	text-align: center;
+	transition: all 1s ease-in-out;
+	padding-bottom: 20px;
+	box-shadow: 0px 5px 10px black;
+	overflow: hidden;
+}
+.mobileMenu > a {
+	width:80%;
+	display:inline-block;
+	border-collapse: collapse;
+	text-align: center;
+	background: rgba(208,208,208,0.70);
+	padding: 5px 15px;
+	border: solid black 3px;
+    margin-top: 10px;
+	border-radius: 20px;
+	font-size: 4vh;
+	box-shadow: 0px 0px 2px black;
+	text-decoration: none;
+}
+.mbHidden {
+	opacity: 0;
+	top: 10px;
+}
+
+.backgroundVid {
+	min-width: 100%; 
+    max-height: 100%;
+	margin-top: -20vh;
+}
+.video-container {
+  position: static;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.video-container > video {
+  display: block;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+	overflow: hidden;
+}
+@media screen and (max-aspect-ratio: 1920/1080) {
+  .video-container > video {
+    height: 100%;
+  }
+}
+@media screen and (min-aspect-ratio: 1920/1080) {
+  .video-container > video {
+    width: 100%;
+  }
+}
+
+.wrapper{
+  position:absolute;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.wrapper .wrapper__video{
+  object-fit: cover;
+  
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+}
+.videoText {
+  position: static;
+  text-align: center;
+  top:25vh;
+}
+#velkomstTekst {
+	font-size: 6vh;
+	font-weight: 900;
+	color:white;
+	text-shadow: 0px 0px 5px black;
+	-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+	margin-bottom: 5vh;
+	margin-top:25vh;
+}
+
+#logoCenterHeader {
+	width:10%;
+}
+
+#læsMere {
+	margin-top:5vh;
+	font-size: 4vh;
+	color:white;
+	text-shadow: 0px 0px 5px black;
+	-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+	text-decoration: none !important;
+}
+#læsMere > i {
+	font-size: 8vh;
+}
+#topBarLogo{
+	transition: all 1s ease-in-out;
+	opacity: 1;
+}
+.hideMe{
+	opacity: 0 !important;
+}
+
+.section2{
+	background-color: red;
+	width:100%;
+	height: 50%;
+}
+header {
+	overflow: hidden;
+	height: 100vh;
+}
+.headerTekst {
+	text-align: center;
+	position: fixed;
+	top:50vh;
+	left:50vw;
+	transform: translate(-50%, -50%);
+	padding:20px;
+	background-color: rgba(0,0,0,0.51);
+}
+h1 {
+	font-size: 5vh;
+}

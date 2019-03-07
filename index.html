@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Untitled Document</title>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+   </head>
+   <body>
+      <div class="topNav">
+         <div class="topNavBar" id="MinTopnav"><a class="active" href="#home">Home</a> <a href="#news">News</a> <a href="#contact">Contact</a> <a href="#about">About</a> <a href="javascript:void(0);" class="icon" onClick="VisMenu()"> <em class="fa fa-bars"></em> </a></div>
+         <div class="mobileMenu mbHidden" id="MobilMenu" >
+            <a onClick="hideNoMatterWhat()" href="#home">Home</a>
+            <a onClick="hideNoMatterWhat()" href="#news">News</a>
+            <a onClick="hideNoMatterWhat()" href="#contact">Contact</a>
+            <a onClick="hideNoMatterWhat()" href="#about">About</a>
+         </div>
+         <img alt="Assens Dykkerklub Logo" src="img/logo.png" id="topBarLogo" class="hideMe">
+      </div>
+      <header >
+         <div class="wrapper">
+            <video autoplay muted loop class="wrapper__video">
+               <source src="vid/BackGround.mp4" type="video/mp4">
+               <source src="vid/BackGround.webm" type="video/webm">
+               <source src="vid/BackGround.ogv" type="video/ogv">
+            </video>
+         </div>
+         <div class="videoText">
+            <h1 id="velkomstTekst">Velkommen til<br>Assens Dykkerklub</h1>
+			 <img id="logoCenterHeader" src="img/logo.png" alt="assens dykkerklub" style="display:inline-block">
+			 <a href="#"><h1 id="læsMere">Læs mere<br><i class="fas fa-chevron-down"></i></h1></a>
+         </div>
+      </header>
+      <section class="section2">
+         <h1> TEst!</h1>
+		  <h1> TEst!</h1>
+		  <h1> TEst!</h1>
+		  <h1> TEst!</h1>
+		  <h1> TEst!</h1>
+		  <h1> TEst!</h1>
+		  <h1> TEst!</h1>
+		  <h1> TEst!</h1>
+		  <h1> TEst!</h1>
+		  <h1> TEst!</h1>
+		  <h1> TEst!</h1>
+		  <h1> TEst!</h1>
+		  <h1> TEst!</h1>
+		  <h1> TEst!</h1>
+		  <h1> TEst!</h1>
+		  <h1> TEst!</h1>
+		  <h1> TEst!</h1>
+		  <h1> TEst!</h1>
+		  <h1> TEst!</h1>
+		  <h1> TEst!</h1>
+		  <h1> TEst!</h1>
+		  <h1> TEst!</h1>
+		  <h1> TEst!</h1>
+		  <h1> TEst!</h1>
+		  <h1> TEst!</h1>
+		  <h1> TEst!</h1>
+		  <h1> TEst!</h1>
+		  <h1> TEst!</h1>
+		  <h1> TEst!</h1>
+		  <h1> TEst!</h1>
+		  <h1> TEst!</h1>
+		  <h1> TEst!</h1>
+		  <h1> TEst!</h1>
+		  <h1> TEst!</h1>
+		  <h1> TEst!</h1>
+      </section>
+   </body>
+   <script>
+      function VisMenu() {
+      var x = document.getElementById("MobilMenu");
+      if (x.classList.contains("mbHidden")) {
+      x.classList.remove("mbHidden");
+      } else {
+      x.classList.add("mbHidden");
+      }
+      }
+      		   function hideNoMatterWhat() {
+      var x = document.getElementById("MobilMenu");
+      x.classList.add("mbHidden");
+      
+      }
+	   	function erDenSynlig(elem)
+{
+    var y = elem.offsetTop;
+    var height = elem.offsetHeight;
+
+    while ( elem = elem.offsetParent )
+        y += elem.offsetTop;
+
+    var maxHeight = y + height;
+    var erSynlig = ( y < ( window.pageYOffset + window.innerHeight ) ) && ( maxHeight >= window.pageYOffset );
+    return erSynlig; 
+
+}
+	   function check()
+{
+    var canvas = document.getElementById("logoCenterHeader");
+	var x = document.getElementById("topBarLogo");
+	console.log("scrolled")
+    if(erDenSynlig(canvas))
+        x.classList.add("hideMe")
+    else
+        x.classList.remove("hideMe")
+}
+	   window.addEventListener("scroll", check, false);
+   </script>
+</html>
