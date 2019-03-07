@@ -52,6 +52,15 @@ body {
     float: right;
     display: block;
   }
+  .Content{
+	padding-top: 5vh;
+	width: 90% !important;
+	margin-left: 5% !important;
+}
+	.De3uddanelser {
+	width:100% !important;
+		margin-bottom: 1vh;
+}
 }
 @media screen and (max-width: 700px) {
   .topNav.responsive {position: relative;}
@@ -65,6 +74,12 @@ body {
     display: block;
     text-align: left;
   }
+
+	.Content{
+	padding-top: 5vh;
+	width: 95%;
+	margin-left: 2.5%;
+}
 }
 .mobileMenu {
 	position: fixed;
@@ -80,6 +95,7 @@ body {
 	box-shadow: 0px 5px 10px black;
 	overflow: hidden;
 }
+
 .mobileMenu > a {
 	width:80%;
 	display:inline-block;
@@ -163,7 +179,7 @@ body {
 }
 
 #logoCenterHeader {
-	width:10%;
+	height: 20vh;
 }
 
 #laesMere {
@@ -174,6 +190,21 @@ body {
 	-webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
 	text-decoration: none !important;
+}
+.De3uddanelser {
+	display:inline-block;
+	width:30%;
+	margin-right: 1.8vw;
+	background-color: rgba(255,255,255,0.6);
+	height: 40vh;
+	border-radius: 10px;
+	box-shadow: 0px 0px 15px black;
+}
+.titel {
+	margin-bottom: 2vh;
+	color:white;
+	text-shadow: 0px 0px 15px black;
+	
 }
 #laesMere > i {
 	font-size: 8vh;
@@ -190,13 +221,13 @@ body {
 .section2{
 	background-color: #445980;
 	width:100%;
-	height: 50%;
 	box-shadow: 0px -2px 10px black;
 }
 .Content{
 	padding-top: 5vh;
 	width: 60%;
 	margin-left: 20%;
+	padding-bottom: 5vh;
 }
 header {
 	overflow: hidden;
